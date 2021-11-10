@@ -6,7 +6,7 @@ namespace BasicCorePrograms
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter the Program number which is to be executed \n 1. Flip Coin \n 2. Exit");
+            Console.WriteLine("Enter the Program number which is to be executed \n 1. Flip Coin \n 2. Leap Year \n 3. Exit");
             int option = Convert.ToInt32(Console.ReadLine());
             bool flag = true;
             while (flag)
@@ -18,6 +18,10 @@ namespace BasicCorePrograms
                         coin.Play();
                         break;
                     case 2:
+                        LeapYear check = new LeapYear();
+                        check.Leap();
+                        break;
+                    case 3:
                         flag = false;
                         break;
                 }
